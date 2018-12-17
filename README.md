@@ -14,3 +14,29 @@ JDBC驱动程序技术研究
       个数据库厂商达成的协议，也就是由sun定义一组接口，由数据库厂商来实现，并规定开发人员
       访问数据库所使用的方法的调用规范。
 </pre>
+
+<pre>
+实现JDBC操作的四个核心对象：
+      1）DriverManager：驱动管理
+      2）Connection：创建连接
+      3）Statement：操作SQL语句，并返回相应结果的对象
+      5）ResultSet:结果集处理
+</pre>
+
+![](https://i.imgur.com/FmiWtBV.png)
+
+<pre>
+JDBC工作整体流程
+
+      1）加载驱动
+      2）建立连接
+      3）创建语句对象
+      5）创建SQL语句
+      6）执行SQL语句
+      7）处理结果集
+      8）关闭连接
+</pre>
+
+JDBC实际调用过程
+
+![](https://i.imgur.com/5nXh9qo.png)
